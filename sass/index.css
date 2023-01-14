@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* Загальні утиліти */
+:root {
+  --primary-bg-color: #F5F5F5;
+  --secondary-bg-color: #F5F4FA;
+  --tertiary-bg-and-text-color: #FFFFFF;
+  --primary-accent-bg-and-text-color: #2196F3;
+  --secondary-accent-bg-color: #188CE8;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--tertiary-bg-and-text-color);
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  display: block;
+}/*# sourceMappingURL=index.css.map */
