@@ -1,0 +1,49 @@
+//  Текстові стилі
+
+@mixin font ($fw, $fs, $lh, $ls: 0.03em) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+//  Центрування
+
+@mixin centerFlex($d: flex, $ai: center, $jc: center) {
+    display: $d;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+// Адаптивна верстка (медіа-запити) 
+
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desctop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Піксельна щільність
+
+@mixin retina {
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+}
